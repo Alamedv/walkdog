@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-01T11:51:44.898289" rpa="false" schemaversion="5">
+<suite id="s1" name="Home" source="C:\QAx\projects\walkdog\home.robot">
+<test id="s1-t1" name="Webapp deve estar online" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-01T11:51:45.149472" level="INFO">Opening browser 'chrome' to base url 'https://walkdog.vercel.app/'.</msg>
+<arg>https://walkdog.vercel.app/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-01T11:51:45.149278" elapsed="1.417478"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-07-01T11:51:46.573826" level="INFO">Page title is 'Walkdog by Papito'.</msg>
+<arg>Walkdog by Papito</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-07-01T11:51:46.567191" elapsed="0.006761"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-01T11:51:46.590870" level="INFO">Current page contains text 'Cuidado e diversão em cada passo'.</msg>
+<arg>Cuidado e diversão em cada passo</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-01T11:51:46.574448" elapsed="0.016537"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-01T11:51:51.592004" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-01T11:51:46.591287" elapsed="5.000810"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-01T11:51:51.592430" elapsed="2.107662"/>
+</kw>
+<status status="PASS" start="2025-07-01T11:51:45.148385" elapsed="8.552120"/>
+</test>
+<doc>Testes simples</doc>
+<status status="PASS" start="2025-07-01T11:51:44.899422" elapsed="8.801776"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Home" id="s1" pass="1" fail="0" skip="0">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
